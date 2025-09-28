@@ -1,0 +1,57 @@
+.ant-tabs-top>.ant-tabs-nav,
+.ant-tabs-bottom>.ant-tabs-nav {
+  margin-bottom: 0 !important;
+}
+
+.ant-tabs-tab-btn {
+  color: gray !important;
+}
+
+// .ant-tn-variant-solid:not(disabled):not(.ant-btn-disabled) :hover {
+.ant-btn {
+  &:hover {
+    background-color: #448480 !important;
+    color: white !important;
+    border: none !important;
+  }
+}
+
+.ant-btn-variant-outlined {
+  &:hover {
+    border: 1px solid #448480 !important;
+    color: #448480 !important;
+    background-color: white !important;
+  }
+}
+
+/* TABS - TABPANE */
+.ant-tabs-tabpane {
+  .ant-tabs-nav-list {
+    width: 100% !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    background-color: rgb(240, 241, 243) !important;
+    border-radius: 5px !important;
+    padding: 3px !important;
+    gap: 5px;
+  }
+
+  .ant-tabs-tab {
+    flex: 1 1 0 !important;
+    margin: 0 !important;
+    padding: 5px 0 !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 5px !important;
+  }
+
+
+  .ant-tabs-ink-bar {
+    display: none !important;
+  }
+
+
+  .ant-tabs-tab-active {
+    background-color: white !important;
+  }
+}

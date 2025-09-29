@@ -7,7 +7,7 @@ import PrivateRoute from "./PrivateRoute";
 export default function AppRouter() {
   return (
     <Routes>
-      <Route path="/" element={<Login />} />
+      <Route path="/Kontabiliteti/" element={<Login />} />
       <Route
         path="/dashboard"
         element={

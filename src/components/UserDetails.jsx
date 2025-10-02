@@ -41,7 +41,7 @@ const UserDetails = ({ mode, user, onBack }) => {
   console.log("Rendering UserDetails with user:", user, "and mode:", mode);
 
   return (
-    <div className="border p-6 rounded-lg bg-white shadow-sm">
+    <div className="border !border-gray-200 p-6 rounded-lg bg-white !shadow-sm">
       <h2 className="text-xl font-semibold mb-4">
         {isPreview
           ? "Detajet e përdoruesit"

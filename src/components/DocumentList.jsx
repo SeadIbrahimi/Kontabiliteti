@@ -96,7 +96,7 @@ const DocumentList = (params) => {
 
   return (
     <div className="flex flex-col gap-4 mb-10">
-      <div className="space-y-4 border p-5  rounded-lg bg-white">
+      <div className="flex flex-col gap-4 border !border-gray-200 p-5  rounded-lg bg-white">
         {pagination.total > 0 && (
           <div className="w-full flex justify-end">
             <p className="flex gap-2">
@@ -123,7 +123,7 @@ const DocumentList = (params) => {
                 status === DocumentStatusEnum.registered ? "green-50" : "white"
               } shadow-sm hover:scale-[1.02] transition-all cursor-pointer`}
             >
-              <div className="flex items-center space-x-6">
+              <div className="flex items-center gap-6">
                 <div
                   className={`${
                     status === DocumentStatusEnum.initial
@@ -148,11 +148,11 @@ const DocumentList = (params) => {
                     }}
                   />
                 </div>
-                <div className="flex flex-col space-y-2">
+                <div className="flex flex-col gap-2">
                   <h2 className="ms-3 font-semibold text-md  text-gray-800">
                     {doc.fileName || "Fajlli nuk ka emër"}
                   </h2>
-                  <div className="flex space-x-4 items-center text-sm text-gray-600">
+                  <div className="flex gap-4 items-center text-sm text-gray-600">
                     <span
                       className={`${
                         status === DocumentStatusEnum.initial
@@ -166,7 +166,7 @@ const DocumentList = (params) => {
                         (item) => item.value === doc.category
                       )?.label || "Pa kategori"}
                     </span>
-                    <div className="flex items-center space-x-1">
+                    <div className="flex items-center gap-1">
                       <Image
                         src={calendarIcon}
                         alt="Calendar icon"
@@ -188,7 +188,7 @@ const DocumentList = (params) => {
                   </div>
                 </div>
               </div>
-              <div className="flex space-x-4 items-center">
+              <div className="flex gap-4 items-center">
                 <Tooltip title="Gjenero PDF">
                   <Button
                     type="text"

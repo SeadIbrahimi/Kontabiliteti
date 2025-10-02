@@ -27,7 +27,7 @@ const DocumentTypeTabs = () => {
     label: (
       <div className="flex flex-row gap-1">
         <p>{docType.label}</p>
-        <span className="ml-2 flex items-center justify-center w-6 h-6 text-xs font-semibold rounded-full border bg-gray-100">
+        <span className="ml-2 flex items-center justify-center w-6 h-6 text-xs font-semibold rounded-full border border-gray-400 ">
           0
         </span>
       </div>
@@ -47,7 +47,7 @@ const DocumentTypeTabs = () => {
       <Filters filters={filters} setFilters={setFilters} />
       <Tabs
         onChange={handleTabChange}
-        className="mt-10"
+        className="!mt-10"
         defaultActiveKey="1"
         items={tabItems}
       />

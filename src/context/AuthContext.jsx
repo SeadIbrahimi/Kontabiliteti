@@ -15,7 +15,7 @@ export const AuthProvider = ({ children }) => {
   };
   const logout = () => {
     localStorage.clear();
-    navigate("/");
+    navigate("/Kontabiliteti/");
   }; // setUser(null);
 
   return (

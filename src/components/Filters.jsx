@@ -43,7 +43,7 @@ const Filters = ({ setFilters }) => {
   }, []);
 
   return (
-    <div className="border rounded-md p-5 bg-white">
+    <div className="border border-gray-200 rounded-md p-5 bg-white">
       <div className="flex items-center gap-2 mb-4">
         <Image src={filterIcon} alt="filter icon" />
         <h3 className="text-lg font-semibold">Filtrat</h3>

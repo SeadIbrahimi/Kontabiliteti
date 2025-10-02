@@ -14,8 +14,8 @@ const NavbarMenu = () => {
           Kontabiliteti Digjital
         </h1>
 
-        <div className="flex items-center space-x-6">
-          <div className="hidden sm:flex items-center space-x-2 cursor-default select-none">
+        <div className="flex items-center gap-6">
+          <div className="hidden sm:flex items-center gap-2 cursor-default select-none">
             <Image
               src={userIcon}
               alt="User Icon"

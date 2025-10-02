@@ -24,7 +24,7 @@ const AuthForm = () => {
       params,
       (response) => {
         login(response?.data);
-        navigate("/dashboard");
+        navigate("/Kontabiliteti/dashboard");
         setLoading(false);
       },
       (error) => {
@@ -50,7 +50,7 @@ const AuthForm = () => {
           form={form}
           layout="vertical"
           onFinish={handleSubmit}
-          className="w-full max-w-md bg-white rounded-xl shadow-lg p-8 border border-gray-200"
+          className="w-full max-w-md bg-white rounded-xl shadow-lg !p-8 border border-gray-200"
         >
           <h2 className="text-2xl font-bold text-green-700 mb-6 text-center tracking-tight">
             Hyr në Portalin e Kontabilitetit
@@ -97,10 +97,10 @@ const AuthForm = () => {
           </Button> */}
           <Button
             block
-            type="primary"
+            type="default"
             size="large"
             htmlType="submit"
-            className="bg-gray-600 hover:bg-gray-800 "
+            className="!bg-gray-600 hover:!bg-gray-800 !text-white"
             loading={loading}
           >
             Hyr

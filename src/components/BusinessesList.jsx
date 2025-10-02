@@ -101,7 +101,7 @@ const BusinessesList = () => {
 
   return (
     <div className="flex flex-col gap-4 mb-10">
-      <div className="space-y-4 border p-5 rounded-lg bg-white">
+      <div className="flex flex-col gap-4 border !border-gray-300 p-5 rounded-lg bg-white">
         <div className="flex justify-between items-center">
           {pagination.total > 0 ? (
             <p className="flex gap-2">
@@ -115,7 +115,7 @@ const BusinessesList = () => {
           )}
           <Button
             type="primary"
-            className="bg-gray-600 hover:bg-gray-800"
+            className="!bg-gray-600 hover:bg-gray-800"
             onClick={() => setMode("add")}
           >
             Shto Biznes
@@ -128,13 +128,13 @@ const BusinessesList = () => {
           businesses.map((business) => (
             <div
               key={business.id}
-              className="border py-3 px-5 rounded-lg flex justify-between items-center bg-white shadow-sm hover:scale-[1.02] transition-all cursor-pointer"
+              className="border !border-gray-200 py-3 px-5 rounded-lg flex justify-between items-center bg-white shadow-sm hover:scale-[1.02] transition-all cursor-pointer"
             >
-              <div className="flex items-center space-x-6">
+              <div className="flex items-center gap-6">
                 <div className="bg-green-100 text-green-600 rounded-full p-3">
                   <ShopOutlined style={{ fontSize: "24px" }} />
                 </div>
-                <div className="flex flex-col space-y-2">
+                <div className="flex flex-col gap-2">
                   <h2 className="ms-3 font-semibold text-md text-gray-800">
                     {business.name || "Pa emër"}
                   </h2>
@@ -150,7 +150,7 @@ const BusinessesList = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex space-x-4 items-center">
+              <div className="flex gap-4 items-center">
                 <Tooltip title="Njesitë e biznesit">
                   <Button
                     type="text"

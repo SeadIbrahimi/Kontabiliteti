@@ -151,7 +151,7 @@ const BusinessDetails = ({ mode, business, onBack }) => {
   };
 
   return (
-    <div className="border p-6 rounded-lg bg-white shadow-sm">
+    <div className="border-gray-200 p-6 rounded-lg bg-white shadow-sm">
       <h2 className="text-xl font-semibold text-center mt-5 mb-10">
         {isPreview
           ? "Detajet e biznesit"
@@ -462,7 +462,7 @@ const BusinessDetails = ({ mode, business, onBack }) => {
                               }) => (
                                 <div
                                   key={pKey}
-                                  className="border p-4 rounded-lg mb-4 bg-gray-50"
+                                  className="border-gray-200 p-4 rounded-lg mb-4 bg-gray-50"
                                 >
                                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                                     <Form.Item

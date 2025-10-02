@@ -9,7 +9,7 @@ export default function AppRouter() {
     <Routes>
       <Route path="/Kontabiliteti/" element={<Login />} />
       <Route
-        path="/dashboard"
+        path="/Kontabiliteti/dashboard"
         element={
           <PrivateRoute>
             <Dashboard />

@@ -100,8 +100,8 @@ const UsersList = () => {
   }
 
   return (
-    <div className="flex flex-col gap-4 mb-10">
-      <div className="space-y-4 border p-5 rounded-lg bg-white">
+    <div className="flex flex-col !gap-4 !mb-10">
+      <div className="flex flex-col gap-4 border !border-gray-300 p-5 rounded-lg bg-white">
         <div className="flex justify-between items-center">
           {pagination.total > 0 ? (
             <p className="flex gap-2">
@@ -115,7 +115,7 @@ const UsersList = () => {
           )}
           <Button
             type="primary"
-            className="bg-gray-600 hover:bg-gray-800"
+            className="!bg-gray-600 hover:bg-gray-800"
             onClick={() => setMode("add")}
           >
             Shto Përdorues
@@ -128,13 +128,13 @@ const UsersList = () => {
           users.map((user) => (
             <div
               key={user.id}
-              className="border py-3 px-5 rounded-lg flex justify-between items-center bg-white shadow-sm hover:scale-[1.02] transition-all cursor-pointer"
+              className="border py-3 px-5 rounded-lg flex justify-between items-center border-gray-300 bg-white shadow-sm hover:scale-[1.02] transition-all cursor-pointer"
             >
-              <div className="flex items-center space-x-6">
+              <div className="flex items-center gap-6">
                 <div className="bg-blue-100 text-blue-600 rounded-full p-3">
                   <UserOutlined style={{ fontSize: "24px" }} />
                 </div>
-                <div className="flex flex-col space-y-2">
+                <div className="flex flex-col gap-2">
                   <h2 className="ms-3 font-semibold text-md text-gray-800">
                     {user.firstName || user.lastName
                       ? `${user.firstName} ${user.lastName}`
@@ -152,7 +152,7 @@ const UsersList = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex space-x-4 items-center">
+              <div className="flex gap-4 items-center">
                 <Tooltip title="Shfaq">
                   <Button
                     type="text"
